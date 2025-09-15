@@ -1,17 +1,17 @@
 data "aws_ami" "ami_info" {
     most_recent = true
-    owners = ["973714476881"]
+    owners = ["277707113105"]
 
     filter {
       name = "name"
       values = ["RHEL-9-DevOps-Practice"]
     }
     filter {
-      name = "root_device_type"
+      name = "root-device-type"
       values = ["ebs"]
     }
     filter {
-      name = "virtualzation_type"
+      name = "virtualization-type"
       values = ["hvm"]
     }
   
